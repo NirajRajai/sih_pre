@@ -9,7 +9,7 @@ CONSUMER_SECRET = 'WzKU46BZloHztcHzRkUfRZaJ5Pqt6VSsAucQ4eJBsWGZalKDiu'
 
 client = StreamClient(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_SECRET)
 
-resource = client.stream.statuses.filter.post(track='India')
+resource = client.stream.statuses.filter.post(track='@RailMinIndia')
 
 
 with open("tweet.txt", "a") as file:
