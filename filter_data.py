@@ -1,0 +1,17 @@
+import re
+f = open("new_tweet28.txt","r")
+data=f.read()
+data=data.replace('b\'','')
+data=data.replace('b\"','')
+data=data.replace('\'','')
+data=data.replace('\"','')
+data=data.replace('+','')
+data=data.replace('https:/.co','')
+data=data.replace('..','.')
+data=data.replace('  ',' ')
+#data=data
+data=re.sub(r'[@,\\,/]\w+',"",data)
+f1=open("new_tweet28.txt","w")
+f1.write(data)
+f.close()
+f1.close()
