@@ -1,0 +1,17 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+    <string name="app_name">Complaint Log</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">Bjau9ELWvubE4oOmDz1t1UTya</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">bORvDG90i09ImOTC9d1rKL1u0SiG5cJnaIKDebwWCNPJJiAerq</string>
+    <string name="open_complaints">Open Complaints</string>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+</resources>

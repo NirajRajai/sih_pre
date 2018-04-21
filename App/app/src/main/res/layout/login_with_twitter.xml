@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2490d9">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_alignParentBottom="true"
+        android:hint="Username"
+        android:textAlignment="center"
+        android:layout_marginBottom="320dp"
+        android:textSize="22sp" />
+    <Button
+        android:text="Login"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="270dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

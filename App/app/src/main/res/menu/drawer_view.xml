@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/open_complaints"
+            android:icon="@drawable/ic_inbox_black_24dp"
+            android:title="@string/open_complaints" />
+        <item
+            android:id="@+id/resolved_complaints"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Resolved Complaints" />
+
+    </group>
+</menu>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_full"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/complaint_id_full"
+                android:layout_marginStart="8dp"
+                android:textSize="16sp"
+
+                android:layout_marginTop="72dp"
+                android:text="Complaint #id"
+                android:layout_marginBottom="16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/complaint_time_full"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:text="HH:MM"
+                android:layout_marginTop="72dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/complaint_date_full"
+                android:text="DD Mon"
+                android:layout_toLeftOf="@id/complaint_time_full"
+                android:layout_marginTop="72dp"
+                android:layout_marginEnd="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/complaint_id_full"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/darker_gray"
+                android:id="@+id/complaint_div" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/complaint_text_full"
+                android:text="Complaint Text"
+                android:layout_below="@id/complaint_div"
+                android:layout_margin="16dp"
+                android:textSize="20sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/complaint_text_full"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/darker_gray"
+                android:id="@+id/complaint_div2" />
+
+            <TextView
+                android:id="@+id/text_view_station"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/complaint_div2"
+                android:layout_marginStart="16dp"
+                android:text="Station: "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:text="Train No. :"
+                android:id="@+id/text_view_train_no"
+                android:layout_below="@id/text_view_station"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_view_link"
+                android:layout_below="@id/text_view_train_no"
+                android:paddingTop="8dp"
+                android:paddingLeft="16dp"
+                android:text="Tweet Link:"
+                android:autoLink="web"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/text_view_link"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/darker_gray"
+                android:clickable="true"
+                android:id="@+id/complaint_div3" />
+
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                style="@style/Widget.AppCompat.Spinner.DropDown"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:entries="@array/planets_array"
+                android:layout_marginBottom="80dp" />
+
+            <Button
+                android:id="@+id/button_mark_resolved"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="22dp"
+                android:layout_marginTop="32dp"
+                android:text="Mark Resolved" />
+
+
+        </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
