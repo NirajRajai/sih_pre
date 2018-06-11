@@ -17,7 +17,7 @@ Railway complaint system is becoming better day by day. The number of complaints
 ### Collecting Data
 We used twitter api to collect tweets for 6-7 days. In total we collected around 20,000 tweets.
 ### Pre-processing Data
-We removed unnecessary twitter handle mentions and hashtags. Due to encoding in UTF there certain special characters came in the format(/e00) so we filtered that also.
+We removed unnecessary twitter handle mentions and hashtags. Due to encoding in UTF certain special characters came in the format(/e00) so we filtered that also.
 ### Selecting Features
 We used the top 300 words used in the tweets apart from common words i.e. is,the,etc.
 ### Training Model
