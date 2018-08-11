@@ -23,7 +23,7 @@ def random_forest_classifier(features, target):
     :param target:
     :return: trained random forest classifier
     """
-    clf = RandomForestClassifier(n_estimators=1000,oob_score=True,min_samples_leaf=1,max_features=0.05)
+    clf = RandomForestClassifier(n_estimators=1000)
     clf.fit(features, target)
     joblib.dump(clf, 'trained_model.pkl') 
     return clf
