@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/complaint_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complaint #id"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/complaint"
+        android:layout_below="@id/complaint_id"
+        android:layout_margin="8dp"
+        android:textSize="22sp"
+        android:text="Complaint complaint complaint"
+        android:textAppearance="?attr/textAppearanceListItem"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/complaint_time"
+        android:text="HH:MM"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp" />
+
+</RelativeLayout>
