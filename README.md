@@ -19,7 +19,7 @@ We used twitter api to collect tweets for 6-7 days. In total we collected around
 ### Pre-processing Data
 We removed unnecessary twitter handle mentions and hashtags. Due to encoding in UTF certain special characters came in the format(/e00) so we filtered that also.
 ### Selecting Features
-We used the top 300 words used in the tweets apart from common words i.e. is,the,etc.
+We used tfidf vectorizer to vectorize sentences into vector which represents the a particular sentence.
 ### Training Model
 We used Random Forest algorithm and it gave us an accuracy of around 88%. We are classfying each tweet into 10 categories namely food, cleanliness, security, etc.
 ### Fetching location of train/station
