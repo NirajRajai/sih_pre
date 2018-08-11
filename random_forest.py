@@ -49,12 +49,12 @@ def main():
     dataset = pd.read_csv(OUTPUT_PATH)
     # Get basic statistics of the loaded dataset
     dataset_statistics(dataset)
-    test_x=dataset.iloc[:, :342]
-    #train_y=dataset.iloc[:, 342: ]
+    train_x=dataset.iloc[:, :1]
+    train_y=dataset.iloc[:, -1 ]
     # Filter missing values
     #train_x, test_x, train_y, test_y = split_dataset(datas, 0.7, HEADERS[1:-1], HEADERS[-1])
     #train_x=float(train_x)
-    train_x, test_x, train_y, test_y = train_test_split(X, y, test_size=0.3) 
+    train_x, test_x, train_y, test_y = train_test_split(train_x, train_y, test_size=0.3)
      #Train and Test dataset size details
     print ("Train_x Shape :: ", train_x.shape)
     print ("Train_y Shape :: ", train_y.shape)
